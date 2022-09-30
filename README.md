@@ -14,7 +14,7 @@ This project is a test task
   <li>React lazy - the components load is postponed</li>
   <li>Node sass - package connection sass (npm i node-sass --save)</li>
 </ul>
-<h3>Instructions for project deployment on Heroku hosting</h3>
+<h3>Instructions for project deployment on Heroku hosting (https://skubenyk-dragon-space-x-heroku.herokuapp.com/)</h3>
 <ol>The first stage:
   <li></li>
   <li></li>  
