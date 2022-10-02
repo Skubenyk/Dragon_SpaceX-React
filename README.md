@@ -51,8 +51,12 @@ https://skubenyk-dragon-space-x-heroku.herokuapp.com/
 
 <h3>Additional information about the project</h3>
 The App supports the adaptive interface (1366px - 320px);
+<br/>
 The page-by-page download is implemented with <b>React lazy</b> and <b>React Router DOM</b>
 Data cache is done with React hook useEffect
+
+
+<h3>Tests React App</h3>
 
 <h3>Dev environment</h3>
 <ul><h5>Software versions:</h5>
@@ -79,6 +83,4 @@ Data cache is done with React hook useEffect
   <li><b>npm i webpack webpack-cli --save-dev</b></li>
   <li><b>npm install classnames --save</b></li>
 <ul>
-
-<h3>Tests React App</h3>
   
