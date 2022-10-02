@@ -66,17 +66,19 @@ Data cache is done with React hook useEffect
   <li>Sass - 1.55.0</li>
   <li>Webpack - 5.74.0</li>
 <ul>
-  <ul><h5>Commands to install packages:</h5>
+<ul><h5>Commands to install packages:</h5>
   <li><b>npx create-react-app skubenyk_dragon_space-x</b></li>
-  <li>npm run start</li>
-  <li>npm run build</li>
-  <li><b>npm install axios</b>)</li>
+  <li><b>npm run start</b></li>
+  <li><b>npm run build</b></li>
+  <li><b>npm install axios</b></li>
   <li><b>npm install yup --save</b></li>
   <li><b>npm install formik --save</b></li>
   <li><b>npm install swiper</b></li>
   <li><b>npm i react-router-dom --save</b></li>
   <li><b>npm i node-sass --save</b></li>
-  <li>npm i webpack webpack-cli --save-dev</li>
-  <li>npm install classnames --save</li>
+  <li><b>npm i webpack webpack-cli --save-dev</b></li>
+  <li><b>npm install classnames --save</b></li>
 <ul>
+
+<h3>Tests React App</h3>
   
