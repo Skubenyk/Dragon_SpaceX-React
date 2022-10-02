@@ -1,7 +1,13 @@
 # Dragon SpaceX
 This project is a test task
-<br>
-Аuthor: Skubenyk Yevhenii skubenik@gmail.com
+<br/>
+Аuthor: Skubenyk Yevhenii 
+<br/>
+skubenik@gmail.com
+<br/>
+<a href='https://t.me/Skubenik_E'>Telegram</a> 
+<br/>
+<a href='https://www.linkedin.com/in/yevhenii-skubenyk-a8969a125'>Linkedin</a>
 
 ## Description of the project
 <ul><h3>Technologies used:</h3>
