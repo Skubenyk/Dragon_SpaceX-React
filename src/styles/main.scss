@@ -1,0 +1,38 @@
+//*Global
+
+* {
+  // border: 1px solid red;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  position: relative;
+  padding-top: 80px;
+  line-height: 15px;
+  font-size: 12px;
+  color: black;
+  // Media
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-top: 50px;
+  }
+}
+.icon {
+  display: inline-block;
+  stroke: currentColor;
+  fill: currentColor;
+  stroke-width: 0;
+  height: 1em;
+  width: 1em;
+}
+a {
+  text-decoration: none;
+}

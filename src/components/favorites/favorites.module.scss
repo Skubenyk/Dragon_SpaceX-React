@@ -1,0 +1,39 @@
+//!Favorites
+
+@import './../../styles/normolize.scss';
+@import './../../styles/fonts.scss';
+@import './../../styles/main.scss';
+
+//*Favorites
+.containerFavorites {
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  min-height: 300px;
+  padding: 20px;
+  display: flex;
+  // Media
+  @media screen and (max-width: 768px) {
+    min-height: 220px;
+    padding: 15px;
+  }
+  @media screen and (max-width: 480px) {
+    min-height: 180px;
+    padding: 10px;
+  }
+}
+.titleFavorites {
+  margin-bottom: 60px;
+  margin-top: 5px;
+  font-size: 40px;
+  // Media
+  @media screen and (max-width: 768px) {
+    margin-bottom: 36px;
+    font-size: 34px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    margin-top: 0;
+  }
+}

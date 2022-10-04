@@ -1,0 +1,59 @@
+//!Favorites item
+
+@import './../../styles/normolize.scss';
+@import './../../styles/fonts.scss';
+@import './../../styles/main.scss';
+
+//*Favorites
+.containerFavoritesItem {
+  box-shadow: 0 0 3px 1px rgba(221, 221, 221, 1);
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  // Media
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+    padding: 7px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 15px;
+    padding: 5px;
+  }
+}
+.imageListDragon {
+  margin-right: 15px;
+  max-width: 120px;
+  padding: 5px;
+  width: 100%;
+  // Media
+  @media screen and (max-width: 768px) {
+    max-width: 100px;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 80px;
+  }
+}
+.titleNameListDragon {
+  align-self: center;
+  margin-right: 30px;
+  // Media
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
+}
+.buttonFavoritesItem {
+  background-color: orange;
+  height: fit-content;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  width: fit-content;
+  align-self: center;
+  cursor: pointer;
+  margin-top: 5px;
+  border: none;
+  padding: 5px;
+}

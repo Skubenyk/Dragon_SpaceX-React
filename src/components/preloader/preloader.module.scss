@@ -1,0 +1,53 @@
+//!Preloader
+@import './../../styles/normolize.scss';
+@import './../../styles/fonts.scss';
+@import './../../styles/main.scss';
+
+.preloader {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  // background color
+  background: #e0e0e0;
+  z-index: 1001;
+}
+.preloaderImage {
+  animation: preloader-rotate 2s infinite linear;
+  position: relative;
+  text-align: center;
+  margin-left: -35px;
+  margin-top: -35px;
+  color: red;
+  height: 70px;
+  width: 70px;
+  left: 50%;
+  top: 50%;
+  // Media
+  @media screen and (max-width: 1024px) {
+    height: 60px;
+    width: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 50px;
+    width: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 40px;
+    width: 40px;
+  }
+}
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+.loaded .preloader {
+  display: none;
+}

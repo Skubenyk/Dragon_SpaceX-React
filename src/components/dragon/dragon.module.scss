@@ -1,0 +1,137 @@
+//!Dragon
+
+@import './../../styles/normolize.scss';
+@import './../../styles/fonts.scss';
+@import './../../styles/main.scss';
+
+// Show slider
+.slider {
+  display: none;
+}
+.slider.show {
+  display: block;
+}
+
+//*Dragon
+.containerDragon {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  // Media
+  @media screen and (max-width: 768px) {
+    padding-top: 15px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+.imageDragon {
+  margin-bottom: 20px;
+  max-width: 650px;
+  width: 100%;
+  // Media
+  @media screen and (max-width: 768px) {
+    margin-bottom: 17px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 15px;
+  }
+}
+.descriptionDragon {
+  box-shadow: 0 0 3px 1px rgba(221, 221, 221, 1);
+  background-color: aliceblue;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 18px;
+  max-width: 600px;
+  padding: 20px;
+  width: 100%;
+  // Media
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 20px;
+    line-height: 17px;
+    max-width: 550px;
+    padding: 17px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 15px;
+    line-height: 15px;
+    max-width: 380px;
+    padding: 15px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 10px;
+    line-height: 13px;
+    max-width: 300px;
+    padding: 10px;
+  }
+}
+.titleName {
+  margin-bottom: 15px;
+  // Media
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 6px;
+  }
+}
+.titleDescription,
+.titlePar {
+  margin-bottom: 7px;
+  // Media
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 5px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+.titlePar {
+  margin-top: 10px;
+  // Media
+  @media screen and (max-width: 768px) {
+    margin-top: 8px;
+  }
+}
+.buttonDetails {
+  background-color: rgb(255, 215, 0);
+  margin-bottom: 5px;
+  border-radius: 2px;
+  width: fit-content;
+  cursor: pointer;
+  margin-top: 5px;
+  border: none;
+  padding: 8px;
+  // Media
+  @media screen and (max-width: 768px) {
+    padding: 6px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 5px;
+  }
+}
+.buttonFavorites {
+  background-color: greenyellow;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  width: fit-content;
+  cursor: pointer;
+  margin-top: 5px;
+  border: none;
+  padding: 8px;
+  // Media
+  @media screen and (max-width: 768px) {
+    padding: 6px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 5px;
+  }
+}

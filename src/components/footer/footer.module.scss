@@ -1,0 +1,40 @@
+//!Footer
+
+@import './../../styles/normolize.scss';
+@import './../../styles/fonts.scss';
+@import './../../styles/main.scss';
+
+.footer {
+  background-color: rgb(255, 215, 0);
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  display: flex;
+  z-index: 100;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  a {
+    color: rgb(0, 87, 184);
+  }
+  // Media
+  @media screen and (max-width: 768px) {
+    height: 100px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 80px;
+  }
+}
+.footerTitle {
+  font-size: 50px;
+  // Media
+  @media screen and (max-width: 1024px) {
+    font-size: 46px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 34px;
+  }
+}
