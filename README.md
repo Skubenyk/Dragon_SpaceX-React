@@ -54,6 +54,30 @@ https://skubenyk-dragon-space-x-heroku.herokuapp.com/
   <li>Transfer your build files to a public folder, which you should know in <b>skubenyk-dragon-space-x-heroku</b> and delete the previous test file index.html</li>
   <li>Enter the following commands in turn in the terminal: <b>git add .</b> ; <b>git commit -m "text commit"</b> ; <b>git push heroku master</b> .</li>
 </ol>
+<h4>Instructions for project deployment on Heroku hosting(Configure CD to automatically expand the application)</h4>
+<h3>Automatic deployment of the Heroku plugin often does not work correctly!!!</h3>
+<ol>
+  <li>Login to the website <a href='https://dashboard.heroku.com'>Heroku</a></li>
+  <li>we choose the project <b>skubenyk-dragon-space-x-heroku</b></li>
+  <li>Click the tab <b>Deploy</b></li>
+  <li>We choose<b>Connect to GitHub</b></li>
+  <li>We look for and select the name of the repository <b>Skubenyk/skubenyk_dragon_space-x_github</b></li>
+  <li>Сlick on<b>Wait for CI to pass before deploy<b/></li>
+  <li>And at the end we press the button <b>Enable Automatic Deploys</b></li>
+</ol>
+
+<h3>Instructions for project deployment on Netlify hosting
+(Configure CD to automatically expand the application)</h3>
+https://heartfelt-paletas-b9d248.netlify.app
+<ol>
+  <li>Login to the website <a href='https://www.netlify.com/'>Netlify</a> via GitHub</li>
+  <li>In the section <b>Team overview</b> => <b>Add new site</b> => <b>Import an existing project</b></li>
+  <li><b>Import an existing project</b> Connect to GitHub</li>
+  <li>Select repository with GitHub - <b>Skubenyk/skubenyk_dragon_space-x_github</b></li>
+  <li>Press the button <b>Deploy site</b></li>
+  <li>Now after each <b>push</b> on <b>GitHub</b> the plugin will automatically be activated on <b>Netlify</b></li>
+</ol>
+
 
 <h3>Additional information about the project</h3>
 The App supports the adaptive interface (1366px - 320px);
