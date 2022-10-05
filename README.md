@@ -55,7 +55,7 @@ https://skubenyk-dragon-space-x-heroku.herokuapp.com/
   <li>Enter the following commands in turn in the terminal: <b>git add .</b> ; <b>git commit -m "text commit"</b> ; <b>git push heroku master</b> .</li>
 </ol>
 <h3>Instructions for project deployment on Heroku hosting(Configure CD to automatically expand the application)</h3>
-<h3><u>Automatic deployment of the Heroku plugin often does not work correctly!!!</u></h3>
+<h3><ins>Automatic deployment of the Heroku plugin often does not work correctly!!!</ins></h3>
 <ol>
   <li>Login to the website <a href='https://dashboard.heroku.com'>Heroku</a></li>
   <li>we choose the project <b>skubenyk-dragon-space-x-heroku</b></li>
