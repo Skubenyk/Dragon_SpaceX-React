@@ -62,7 +62,7 @@ https://skubenyk-dragon-space-x-heroku.herokuapp.com/
   <li>Click the tab <b>Deploy</b></li>
   <li>We choose <b>Connect to GitHub</b></li>
   <li>We look for and select the name of the repository <b>Skubenyk/skubenyk_dragon_space-x_github</b></li>
-  <li>Сlick on<b>Wait for CI to pass before deploy<b/></li>
+  <li>Сlick on <b>Wait for CI to pass before deploy</b></li>
   <li>And at the end we press the button <b>Enable Automatic Deploys</b></li>
 </ol>
 
