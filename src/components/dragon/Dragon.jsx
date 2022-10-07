@@ -3,7 +3,7 @@
 //*Import base
 import styles from './dragon.module.scss';
 import classNames from 'classnames';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 //*Import Axios to send data to the server
 // import axios from 'axios';
