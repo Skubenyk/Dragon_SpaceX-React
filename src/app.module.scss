@@ -1,0 +1,12 @@
+//!App
+
+@import './styles/normolize.scss';
+@import './styles/fonts.scss';
+@import './styles/main.scss';
+
+.error {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  color: red;
+}

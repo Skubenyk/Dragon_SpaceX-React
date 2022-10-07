@@ -4,6 +4,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import React, { Suspense } from 'react';
+import styles from './app.module.scss';
 
 //*Import Axios to send data to the server
 import axios from 'axios';
@@ -22,15 +23,24 @@ const App = () => {
   const [rockets, setRockets] = useState([]);
   const [loading, setLoading] = useState(false);
   const [favorites, setFavorites] = useState(false);
+  const [error, setError] = useState(null);
 
-  const addRockets = (id) => {
-    setFavorites([...rockets.filter((rocket) => rocket.id === id)]);
-  };
+  // const addRockets = (id) => {
+  //   setFavorites([...rockets.filter((rocket) => rocket.id == id)]);
+  // };
+
+  // const removeRockets = (id) => {
+  //   setFavorites([...rockets.filter((rocket) => rocket.id !== id)]);
+  // };
 
   async function fetchRockets() {
     setLoading(true);
-    const response = await axios.get('https://api.spacexdata.com/v4/dragons');
-    setRockets(response.data);
+    try {
+      const response = await axios.get('https://api.spacexdata.com/v4/dragons');
+      setRockets(response.data);
+    } catch (error) {
+      setError(error);
+    }
     setLoading(false);
   }
 
@@ -41,6 +51,7 @@ const App = () => {
   return (
     <>
       <Header />
+      {error && <div className={styles.error}>Щось пішло не так!!!</div>}
       {loading && <Preloader />}
       <Suspense fallback={<Preloader />}>
         <Routes>
@@ -65,10 +76,11 @@ const App = () => {
             element={
               rockets.map((rocket) => (
                 <Dragon
+                  id={1}
                   key={rocket.id}
                   rocket={rocket}
                   image={rocket}
-                  addRockets={addRockets}
+                  // addRockets={addRockets}
                   setFavorites={setFavorites}
                 />
               ))[0]
@@ -79,10 +91,11 @@ const App = () => {
             element={
               rockets.map((rocket) => (
                 <Dragon
+                  id={2}
                   key={rocket.id}
                   rocket={rocket}
                   image={rocket}
-                  addRockets={addRockets}
+                  // addRockets={addRockets}
                   setFavorites={setFavorites}
                 />
               ))[1]

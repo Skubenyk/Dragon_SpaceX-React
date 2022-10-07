@@ -78,6 +78,7 @@ const Registration = ({ active, setActive }) => {
           <input
             className={classNames(styles.input, styles.firstName)}
             name='firstName'
+            data-testid='firstName'
             placeholder="Ім'я"
             type='text'
             value={formik.values.firstName}

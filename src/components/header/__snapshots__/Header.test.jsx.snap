@@ -1,0 +1,789 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component Header empty snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="header"
+      >
+        <div
+          class="headerWrapper"
+        >
+          <div
+            class="headerLogo"
+          >
+            <a
+              class="logo"
+              href="/"
+            >
+              <img
+                alt="logo"
+                class="logoImage"
+                src="SpaceX_Crew-1_logo.svg"
+              />
+            </a>
+          </div>
+          <div
+            class="headerBlock"
+          >
+            <div
+              class="headerNavigation"
+            >
+              <nav
+                class="navigation"
+                data-testid="navigation"
+              >
+                <ul
+                  class="navigationList"
+                >
+                  <li
+                    class="navigationItem"
+                  >
+                    <a
+                      class="navigationLink"
+                      href="/"
+                    >
+                      ГOЛOВНА
+                    </a>
+                  </li>
+                  <li
+                    class="navigationItem"
+                  >
+                    <a
+                      class="navigationLink"
+                      data-testid="favorites-link"
+                      href="/favorites"
+                    >
+                      ОБРАНЕ
+                    </a>
+                  </li>
+                  <li
+                    class="navigationItem"
+                  >
+                    <a
+                      class="navigationLink"
+                      data-testid="home-link"
+                      href="/profile"
+                    >
+                      ПРОФІЛЬ
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              class="headerOther"
+            >
+              <button
+                class="button buttonTransparent"
+                type="button"
+              >
+                <span>
+                  ВХІД
+                </span>
+              </button>
+              <button
+                class="button"
+                type="button"
+              >
+                <span>
+                  РЕЄСТРАЦІЯ
+                </span>
+              </button>
+            </div>
+            <div
+              class="headerBurger"
+            >
+              <button
+                class="burger"
+                type="button"
+              >
+                <span />
+                <span />
+                <span />
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div
+        class="modal"
+      >
+        <form
+          class="form"
+          method="post"
+        >
+          <h2
+            class="title"
+          >
+            АВТОРИЗАЦІЯ
+          </h2>
+          <div
+            class="wrapper"
+          >
+            <label
+              class="label"
+              for="email"
+            />
+            <input
+              class="input email"
+              name="email"
+              placeholder="Пошта"
+              type="email"
+              value=""
+            />
+            <label
+              class="label"
+              for="password"
+            />
+            <input
+              class="input password"
+              name="password"
+              placeholder="Пароль"
+              type="password"
+              value=""
+            />
+            <div
+              class="button"
+            >
+              <button
+                class="buttonSubmit"
+                type="submit"
+              >
+                <span>
+                  ВХІД
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div
+        class="modal"
+      >
+        <form
+          class="form"
+          method="post"
+        >
+          <h2
+            class="title"
+          >
+            РЕЄСТРАЦІЯ
+          </h2>
+          <div
+            class="wrapper"
+          >
+            <label
+              class="label"
+              for="firstName"
+            />
+            <input
+              class="input firstName"
+              data-testid="firstName"
+              name="firstName"
+              placeholder="Ім'я"
+              type="text"
+              value=""
+            />
+            <label
+              class="label"
+              for="lastName"
+            />
+            <input
+              class="input lastName"
+              name="lastName"
+              placeholder="Прізвище"
+              type="text"
+              value=""
+            />
+            <label
+              class="label"
+              for="userName"
+            />
+            <input
+              class="input userName"
+              name="userName"
+              placeholder="Ім'я користувача"
+              type="text"
+              value=""
+            />
+            <label
+              class="label"
+              for="email"
+            />
+            <input
+              class="input email"
+              name="email"
+              placeholder="Пошта"
+              type="email"
+              value=""
+            />
+            <label
+              class="label"
+              for="password"
+            />
+            <input
+              class="input password"
+              name="password"
+              placeholder="Пароль"
+              type="password"
+              value=""
+            />
+            <div
+              class="button"
+            >
+              <button
+                class="buttonSubmit"
+                type="submit"
+              >
+                <span>
+                  РЕЄСТРАЦІЯ
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div>
+      <header
+        class="header"
+      >
+        <div
+          class="headerWrapper"
+        >
+          <div
+            class="headerLogo"
+          >
+            <a
+              class="logo"
+              href="/"
+            >
+              <img
+                alt="logo"
+                class="logoImage"
+                src="SpaceX_Crew-1_logo.svg"
+              />
+            </a>
+          </div>
+          <div
+            class="headerBlock"
+          >
+            <div
+              class="headerNavigation"
+            >
+              <nav
+                class="navigation"
+                data-testid="navigation"
+              >
+                <ul
+                  class="navigationList"
+                >
+                  <li
+                    class="navigationItem"
+                  >
+                    <a
+                      class="navigationLink"
+                      href="/"
+                    >
+                      ГOЛOВНА
+                    </a>
+                  </li>
+                  <li
+                    class="navigationItem"
+                  >
+                    <a
+                      class="navigationLink"
+                      data-testid="favorites-link"
+                      href="/favorites"
+                    >
+                      ОБРАНЕ
+                    </a>
+                  </li>
+                  <li
+                    class="navigationItem"
+                  >
+                    <a
+                      class="navigationLink"
+                      data-testid="home-link"
+                      href="/profile"
+                    >
+                      ПРОФІЛЬ
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              class="headerOther"
+            >
+              <button
+                class="button buttonTransparent"
+                type="button"
+              >
+                <span>
+                  ВХІД
+                </span>
+              </button>
+              <button
+                class="button"
+                type="button"
+              >
+                <span>
+                  РЕЄСТРАЦІЯ
+                </span>
+              </button>
+            </div>
+            <div
+              class="headerBurger"
+            >
+              <button
+                class="burger"
+                type="button"
+              >
+                <span />
+                <span />
+                <span />
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div
+        class="modal"
+      >
+        <form
+          class="form"
+          method="post"
+        >
+          <h2
+            class="title"
+          >
+            АВТОРИЗАЦІЯ
+          </h2>
+          <div
+            class="wrapper"
+          >
+            <label
+              class="label"
+              for="email"
+            />
+            <input
+              class="input email"
+              name="email"
+              placeholder="Пошта"
+              type="email"
+              value=""
+            />
+            <label
+              class="label"
+              for="password"
+            />
+            <input
+              class="input password"
+              name="password"
+              placeholder="Пароль"
+              type="password"
+              value=""
+            />
+            <div
+              class="button"
+            >
+              <button
+                class="buttonSubmit"
+                type="submit"
+              >
+                <span>
+                  ВХІД
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div
+        class="modal"
+      >
+        <form
+          class="form"
+          method="post"
+        >
+          <h2
+            class="title"
+          >
+            РЕЄСТРАЦІЯ
+          </h2>
+          <div
+            class="wrapper"
+          >
+            <label
+              class="label"
+              for="firstName"
+            />
+            <input
+              class="input firstName"
+              data-testid="firstName"
+              name="firstName"
+              placeholder="Ім'я"
+              type="text"
+              value=""
+            />
+            <label
+              class="label"
+              for="lastName"
+            />
+            <input
+              class="input lastName"
+              name="lastName"
+              placeholder="Прізвище"
+              type="text"
+              value=""
+            />
+            <label
+              class="label"
+              for="userName"
+            />
+            <input
+              class="input userName"
+              name="userName"
+              placeholder="Ім'я користувача"
+              type="text"
+              value=""
+            />
+            <label
+              class="label"
+              for="email"
+            />
+            <input
+              class="input email"
+              name="email"
+              placeholder="Пошта"
+              type="email"
+              value=""
+            />
+            <label
+              class="label"
+              for="password"
+            />
+            <input
+              class="input password"
+              name="password"
+              placeholder="Пароль"
+              type="password"
+              value=""
+            />
+            <div
+              class="button"
+            >
+              <button
+                class="buttonSubmit"
+                type="submit"
+              >
+                <span>
+                  РЕЄСТРАЦІЯ
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="header"
+    >
+      <div
+        class="headerWrapper"
+      >
+        <div
+          class="headerLogo"
+        >
+          <a
+            class="logo"
+            href="/"
+          >
+            <img
+              alt="logo"
+              class="logoImage"
+              src="SpaceX_Crew-1_logo.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="headerBlock"
+        >
+          <div
+            class="headerNavigation"
+          >
+            <nav
+              class="navigation"
+              data-testid="navigation"
+            >
+              <ul
+                class="navigationList"
+              >
+                <li
+                  class="navigationItem"
+                >
+                  <a
+                    class="navigationLink"
+                    href="/"
+                  >
+                    ГOЛOВНА
+                  </a>
+                </li>
+                <li
+                  class="navigationItem"
+                >
+                  <a
+                    class="navigationLink"
+                    data-testid="favorites-link"
+                    href="/favorites"
+                  >
+                    ОБРАНЕ
+                  </a>
+                </li>
+                <li
+                  class="navigationItem"
+                >
+                  <a
+                    class="navigationLink"
+                    data-testid="home-link"
+                    href="/profile"
+                  >
+                    ПРОФІЛЬ
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div
+            class="headerOther"
+          >
+            <button
+              class="button buttonTransparent"
+              type="button"
+            >
+              <span>
+                ВХІД
+              </span>
+            </button>
+            <button
+              class="button"
+              type="button"
+            >
+              <span>
+                РЕЄСТРАЦІЯ
+              </span>
+            </button>
+          </div>
+          <div
+            class="headerBurger"
+          >
+            <button
+              class="burger"
+              type="button"
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="modal"
+    >
+      <form
+        class="form"
+        method="post"
+      >
+        <h2
+          class="title"
+        >
+          АВТОРИЗАЦІЯ
+        </h2>
+        <div
+          class="wrapper"
+        >
+          <label
+            class="label"
+            for="email"
+          />
+          <input
+            class="input email"
+            name="email"
+            placeholder="Пошта"
+            type="email"
+            value=""
+          />
+          <label
+            class="label"
+            for="password"
+          />
+          <input
+            class="input password"
+            name="password"
+            placeholder="Пароль"
+            type="password"
+            value=""
+          />
+          <div
+            class="button"
+          >
+            <button
+              class="buttonSubmit"
+              type="submit"
+            >
+              <span>
+                ВХІД
+              </span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      class="modal"
+    >
+      <form
+        class="form"
+        method="post"
+      >
+        <h2
+          class="title"
+        >
+          РЕЄСТРАЦІЯ
+        </h2>
+        <div
+          class="wrapper"
+        >
+          <label
+            class="label"
+            for="firstName"
+          />
+          <input
+            class="input firstName"
+            data-testid="firstName"
+            name="firstName"
+            placeholder="Ім'я"
+            type="text"
+            value=""
+          />
+          <label
+            class="label"
+            for="lastName"
+          />
+          <input
+            class="input lastName"
+            name="lastName"
+            placeholder="Прізвище"
+            type="text"
+            value=""
+          />
+          <label
+            class="label"
+            for="userName"
+          />
+          <input
+            class="input userName"
+            name="userName"
+            placeholder="Ім'я користувача"
+            type="text"
+            value=""
+          />
+          <label
+            class="label"
+            for="email"
+          />
+          <input
+            class="input email"
+            name="email"
+            placeholder="Пошта"
+            type="email"
+            value=""
+          />
+          <label
+            class="label"
+            for="password"
+          />
+          <input
+            class="input password"
+            name="password"
+            placeholder="Пароль"
+            type="password"
+            value=""
+          />
+          <div
+            class="button"
+          >
+            <button
+              class="buttonSubmit"
+              type="submit"
+            >
+              <span>
+                РЕЄСТРАЦІЯ
+              </span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -3,13 +3,25 @@
 //*Import base
 import styles from './dragon.module.scss';
 import classNames from 'classnames';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+//*Import Axios to send data to the server
+// import axios from 'axios';
 
 //*Import slider Swiper
 import Slider from '../slider/Slider';
 
-const Dragon = ({ rocket, image, addRockets, favorites, setFavorites }) => {
+const Dragon = ({ rocket, image, addRockets, favorites, setFavorites, id }) => {
   const [details, setDetails] = useState(true);
+
+  // async function fetchFavorites(id) {
+  //   const response = await axios.get('https://api.spacexdata.com/v4/dragons' + id);
+  //   setFavorites(response.data);
+  // }
+
+  // useEffect(() => {
+  //   fetchFavorites(rocket.id);
+  // }, [favorites]);
 
   return (
     <div className={styles.containerDragon}>
@@ -49,7 +61,7 @@ const Dragon = ({ rocket, image, addRockets, favorites, setFavorites }) => {
         </div>
         <button
           key={rocket.id}
-          onClick={() => addRockets(rocket.id)}
+          onClick={() => setFavorites(id)}
           className={styles.buttonFavorites}
           type='button'
         >

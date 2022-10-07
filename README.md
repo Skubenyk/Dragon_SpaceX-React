@@ -87,6 +87,23 @@ Data cache is done with React hook useEffect
 
 
 <h3>Tests React App</h3>
+<ul><b>App component tests:</b>
+  <li>Renders App component</li>
+  <li>Number of asynchronous queries</li>
+  <li>Сheck the address of an asynchronous query</li>
+</ul>
+<ul><b>Header component tests:</b>
+  <li>Renders Header component</li>
+  <li>The search for a link "ОБРАНЕ" on a page</li>
+  <li>Snapshot Header component</li>
+  <li>Іnteraction of the user with the input field</li>
+  <li>The check of the routing on the page is favorites</li>
+  <li>Check the roting on the main page</li>
+</ul>
+
+<div><b>CI and integration of tests with a deploy</b></div>
+<p>In the file<b>.github/workflows/dragon-spacex.yml</b>describes the following the data will be left on the branch <b>main<b/>; the version of Node.js will be checked and installed if necessary; build project; tests will be run. This sequence of actions will only start when the data is sent to the main GitHub branch.
+If all these checks are successful, the application will be automatically extended to Netlify</p>
 
 <h3>Dev environment</h3>
 <ul><h5>Software versions:</h5>

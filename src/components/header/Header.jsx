@@ -42,7 +42,7 @@ const Header = () => {
               }
             >
               {/* Navigation */}
-              <nav className={styles.navigation}>
+              <nav className={styles.navigation} data-testid='navigation'>
                 <ul className={styles.navigationList}>
                   <li className={styles.navigationItem}>
                     <Link className={styles.navigationLink} to='/'>
@@ -50,12 +50,20 @@ const Header = () => {
                     </Link>
                   </li>
                   <li className={styles.navigationItem}>
-                    <Link className={styles.navigationLink} to='/favorites'>
+                    <Link
+                      className={styles.navigationLink}
+                      to='/favorites'
+                      data-testid='favorites-link'
+                    >
                       ОБРАНЕ
                     </Link>
                   </li>
                   <li className={styles.navigationItem}>
-                    <Link className={styles.navigationLink} to='/profile'>
+                    <Link
+                      className={styles.navigationLink}
+                      to='/profile'
+                      data-testid='home-link'
+                    >
                       ПРОФІЛЬ
                     </Link>
                   </li>
