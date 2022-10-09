@@ -5,23 +5,16 @@ import styles from './dragon.module.scss';
 import classNames from 'classnames';
 import { useState } from 'react';
 
-//*Import Axios to send data to the server
-// import axios from 'axios';
-
 //*Import slider Swiper
 import Slider from '../slider/Slider';
 
-const Dragon = ({ rocket, image, addRockets, favorites, setFavorites, id }) => {
+const Dragon = (props) => {
+  const { rocket, image, addRockets } = props;
   const [details, setDetails] = useState(true);
 
-  // async function fetchFavorites(id) {
-  //   const response = await axios.get('https://api.spacexdata.com/v4/dragons' + id);
-  //   setFavorites(response.data);
-  // }
-
-  // useEffect(() => {
-  //   fetchFavorites(rocket.id);
-  // }, [favorites]);
+  const handleSubmit = () => {
+    addRockets(rocket.name, rocket.flickr_images);
+  };
 
   return (
     <div className={styles.containerDragon}>
@@ -59,12 +52,7 @@ const Dragon = ({ rocket, image, addRockets, favorites, setFavorites, id }) => {
         >
           <Slider image={image} />
         </div>
-        <button
-          key={rocket.id}
-          onClick={() => setFavorites(id)}
-          className={styles.buttonFavorites}
-          type='button'
-        >
+        <button onClick={handleSubmit} className={styles.buttonFavorites}>
           Додати в обране
         </button>
       </div>

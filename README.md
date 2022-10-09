@@ -101,8 +101,8 @@ Data cache is done with React hook useEffect
   <li>Check the roting on the main page</li>
 </ul>
 
-<div><b>CI and integration of tests with a deploy</b></div>
-<p>In the file<b>.github/workflows/dragon-spacex.yml</b>describes the following the data will be left on the branch <b>main<b/>; the version of Node.js will be checked and installed if necessary; build project; tests will be run. This sequence of actions will only start when the data is sent to the main GitHub branch.
+### CI and integration of tests with a deploy
+<p>In the file <b>.github/workflows/dragon-spacex.yml</b> describes the following the data will be left on the branch <b>main</b>; the version of Node.js will be checked and installed if necessary; build project; tests will be run. This sequence of actions will only start when the data is sent to the main GitHub branch.
 If all these checks are successful, the application will be automatically extended to Netlify</p>
 
 <h3>Dev environment</h3>

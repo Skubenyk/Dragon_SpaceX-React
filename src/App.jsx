@@ -22,22 +22,15 @@ const Dragon = React.lazy(() => import('./components/dragon/Dragon'));
 const App = () => {
   const [rockets, setRockets] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [favorites, setFavorites] = useState(false);
   const [error, setError] = useState(null);
-
-  // const addRockets = (id) => {
-  //   setFavorites([...rockets.filter((rocket) => rocket.id == id)]);
-  // };
-
-  // const removeRockets = (id) => {
-  //   setFavorites([...rockets.filter((rocket) => rocket.id !== id)]);
-  // };
+  const [favorites, setFavorites] = useState([]);
 
   async function fetchRockets() {
     setLoading(true);
     try {
       const response = await axios.get('https://api.spacexdata.com/v4/dragons');
       setRockets(response.data);
+      setFavorites(response.data);
     } catch (error) {
       setError(error);
     }
@@ -48,6 +41,17 @@ const App = () => {
     fetchRockets();
   }, []);
 
+  const addRockets = (name, flickr_images) => {
+    if ((name, flickr_images)) {
+      const newItem = {
+        id: Math.random().toString(36).substring(2, 9),
+        name: name,
+        image: flickr_images,
+      };
+      setFavorites([...favorites, newItem]);
+    }
+  };
+
   return (
     <>
       <Header />
@@ -57,13 +61,7 @@ const App = () => {
         <Routes>
           <Route
             path='/favorites'
-            element={
-              <Favorites
-                key={rockets.id}
-                rocket={rockets}
-                favorites={favorites}
-              />
-            }
+            element={<Favorites key={favorites.id} favorites={favorites} />}
           />
           <Route
             path='/'
@@ -76,12 +74,10 @@ const App = () => {
             element={
               rockets.map((rocket) => (
                 <Dragon
-                  id={1}
                   key={rocket.id}
                   rocket={rocket}
                   image={rocket}
-                  // addRockets={addRockets}
-                  setFavorites={setFavorites}
+                  addRockets={addRockets}
                 />
               ))[0]
             }
@@ -91,12 +87,10 @@ const App = () => {
             element={
               rockets.map((rocket) => (
                 <Dragon
-                  id={2}
                   key={rocket.id}
                   rocket={rocket}
                   image={rocket}
-                  // addRockets={addRockets}
-                  setFavorites={setFavorites}
+                  addRockets={addRockets}
                 />
               ))[1]
             }

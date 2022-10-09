@@ -6,19 +6,15 @@ import styles from './favorites.module.scss';
 //*Import components
 import FavoritesItem from '../favoritesItem/FavoritesItem';
 
-const Favorites = ({ favorites, setFavorites, rocket }) => {
+const Favorites = ({ favorites }) => {
   return (
-    <div className={styles.containerFavorites}>
+    <div className={styles.containerFavorites} key={favorites.id}>
       <h1 className={styles.titleFavorites}>Обране</h1>
       <div className={styles.addFavorites}>
-        {favorites && (
-          <FavoritesItem
-            key={rocket.id}
-            rocket={rocket}
-            favorites={favorites}
-            setFavorites={setFavorites}
-          />
-        )}
+        {favorites &&
+          favorites.map((favorite) => (
+            <FavoritesItem key={favorite.id} favorite={favorite} />
+          ))}
       </div>
     </div>
   );

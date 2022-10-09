@@ -4,24 +4,17 @@
 import styles from './favoritesItem.module.scss';
 import { Link } from 'react-router-dom';
 
-const FavoritesItem = ({ favorites, setFavorites, rocket }) => {
+const FavoritesItem = ({ favorite }) => {
   return (
-    <div key={rocket.id} className={styles.containerFavoritesItem}>
+    <div key={favorite.id} className={styles.containerFavoritesItem}>
       <img
         className={styles.imageListDragon}
-        src={rocket.flickr_images}
-        alt={rocket.name}
+        src={favorite.flickr_images}
+        alt={favorite.name}
       />
       <h2 className={styles.titleNameListDragon}>
-        <Link to={rocket.id}>{rocket.name}</Link>
+        <Link to='/'>{favorite.name}</Link>
       </h2>
-      <button
-        onClick={() => setFavorites(!favorites)}
-        className={styles.buttonFavoritesItem}
-        type='button'
-      >
-        X
-      </button>
     </div>
   );
 };
