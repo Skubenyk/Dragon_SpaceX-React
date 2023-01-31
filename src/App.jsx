@@ -24,13 +24,20 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [favorites, setFavorites] = useState([]);
+  // const [favorites, setFavorites] = useState(() => {
+  //   const saved = localStorage.getItem('favorites');
+  //   if (saved) {
+  //     const initialValue = JSON.parse(saved);
+  //     return initialValue;
+  //   }
+  //   return null;
+  // });
 
   async function fetchRockets() {
     setLoading(true);
     try {
       const response = await axios.get('https://api.spacexdata.com/v4/dragons');
       setRockets(response.data);
-      setFavorites(response.data);
     } catch (error) {
       setError(error);
     }
@@ -41,14 +48,33 @@ const App = () => {
     fetchRockets();
   }, []);
 
+  // useEffect(() => {
+  //   const saved = JSON.parse(localStorage.getItem('favorites') || '[]');
+  //   setFavorites(saved);
+  // }, []);
+
+  useEffect(() => {
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }, [favorites]);
+
   const addRockets = (name, flickr_images) => {
     if ((name, flickr_images)) {
       const newItem = {
-        id: Math.random().toString(36).substring(2, 9),
+        id: Date.now(),
         name: name,
         image: flickr_images,
       };
-      setFavorites([...favorites, newItem]);
+      // setFavorites([...favorites, newItem]);
+      setFavorites((prev) => [newItem, ...prev]);
+    }
+  };
+
+  const removeHandler = (id) => {
+    const shoudRemove = window.confirm(
+      'Ви впевнені, що хочете видалити елемент?'
+    );
+    if (shoudRemove) {
+      setFavorites((prev) => prev.filter((favorite) => favorite.id !== id));
     }
   };
 
@@ -61,7 +87,13 @@ const App = () => {
         <Routes>
           <Route
             path='/favorites'
-            element={<Favorites key={favorites.id} favorites={favorites} />}
+            element={
+              <Favorites
+                key={favorites.id}
+                favorites={favorites}
+                onRemove={removeHandler}
+              />
+            }
           />
           <Route
             path='/'

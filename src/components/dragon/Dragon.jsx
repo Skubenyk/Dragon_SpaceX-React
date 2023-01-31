@@ -12,7 +12,7 @@ const Dragon = (props) => {
   const { rocket, image, addRockets } = props;
   const [details, setDetails] = useState(true);
 
-  const handleSubmit = () => {
+  const handleAdd = () => {
     addRockets(rocket.name, rocket.flickr_images);
   };
 
@@ -52,7 +52,7 @@ const Dragon = (props) => {
         >
           <Slider image={image} />
         </div>
-        <button onClick={handleSubmit} className={styles.buttonFavorites}>
+        <button onClick={handleAdd} className={styles.buttonFavorites}>
           Додати в обране
         </button>
       </div>
