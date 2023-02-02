@@ -23,15 +23,14 @@ const App = () => {
   const [rockets, setRockets] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [favorites, setFavorites] = useState([]);
-  // const [favorites, setFavorites] = useState(() => {
-  //   const saved = localStorage.getItem('favorites');
-  //   if (saved) {
-  //     const initialValue = JSON.parse(saved);
-  //     return initialValue;
-  //   }
-  //   return null;
-  // });
+  const [favorites, setFavorites] = useState(() => {
+    const saved = localStorage.getItem('favorites');
+    if (saved) {
+      const initialValue = JSON.parse(saved);
+      return initialValue;
+    }
+    return [];
+  });
 
   async function fetchRockets() {
     setLoading(true);
