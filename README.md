@@ -1,4 +1,10 @@
 # Dragon SpaceX
+<a href="https://heartfelt-paletas-b9d248.netlify.app/">Dragon Space-X (React App)</a>
+<div><b>The App was developed based on React.js.</b>
+<br/>
+Used: React.js, Rest API, Axios, React Router, Jest, Swiper.js, SCSS, GitHub, Netlify, CI / CD, creating responsive websites.
+</div>
+
 This project is a test task
 <br/>
 Аuthor: Skubenyk Yevhenii 
