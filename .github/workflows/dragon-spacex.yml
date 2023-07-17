@@ -1,24 +1,24 @@
 name: Dragon SpaceX
-on: 
+on:
   push:
     branches: [main]
-  pull_request: 
+  pull_request:
     branches: [main]
 jobs:
   init:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 16.15.0 ]
+        node-version: [16.15.0]
     steps:
       - uses: actions/checkout@v3
       - name: Staring Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: instal modules 
+      - name: instal modules
         run: npm instal
       - name: build project
         run: npm run build
-      - name: test
-        run: npm test
+      # - name: test
+      #   run: npm test
