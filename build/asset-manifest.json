@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.2143988b.css",
-    "main.js": "/static/js/main.f2ee3701.js",
+    "main.js": "/static/js/main.1587ff37.js",
     "static/css/756.668383c9.chunk.css": "/static/css/756.668383c9.chunk.css",
     "static/js/756.6cd9627a.chunk.js": "/static/js/756.6cd9627a.chunk.js",
     "static/js/750.48d1ebe0.chunk.js": "/static/js/750.48d1ebe0.chunk.js",
     "static/media/SpaceX_Crew-1_logo.svg": "/static/media/SpaceX_Crew-1_logo.b8afca006f207bf177e32148b0fe114f.svg",
     "index.html": "/index.html",
     "main.2143988b.css.map": "/static/css/main.2143988b.css.map",
-    "main.f2ee3701.js.map": "/static/js/main.f2ee3701.js.map",
+    "main.1587ff37.js.map": "/static/js/main.1587ff37.js.map",
     "756.668383c9.chunk.css.map": "/static/css/756.668383c9.chunk.css.map",
     "756.6cd9627a.chunk.js.map": "/static/js/756.6cd9627a.chunk.js.map",
     "750.48d1ebe0.chunk.js.map": "/static/js/750.48d1ebe0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2143988b.css",
-    "static/js/main.f2ee3701.js"
+    "static/js/main.1587ff37.js"
   ]
 }

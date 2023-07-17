@@ -21,11 +21,11 @@ const Authorization = ({ active, setActive }) => {
     //*Validation
     validationSchema: Yup.object({
       email: Yup.string()
-        .email('Неправильный email адрес')
-        .required('Обязательное поле!'),
+        .email('Неправильний email')
+        .required('Обов`язкове поле!'),
       password: Yup.string()
-        .min(6, 'Минимум  6 символов')
-        .required('Обязательное поле!'),
+        .min(6, 'Мінімум 6 символів')
+        .required('Обов`язкове поле!'),
     }),
     onSubmit: (values, { setSubmitting, resetForm }) => {
       console.log(JSON.stringify(values, null, 2));
@@ -43,12 +43,10 @@ const Authorization = ({ active, setActive }) => {
         headers: { Authorization: 'form authorization' },
       });
       console.log(response.data);
-      // Показать сообщение про успешную авторизацию
-      alert('Успешная авторизацияция!');
+      alert('Успішная авторизація!');
     } catch (error) {
       console.error('Error:', error);
-      // Показать сообщение про неудачную авторизацию
-      alert('Неудачная авторизация!');
+      alert('Невдала авторизація!');
     }
   };
 
@@ -68,14 +66,14 @@ const Authorization = ({ active, setActive }) => {
           onSubmit={formik.handleSubmit}
         >
           {/* Title form */}
-          <h2 className={styles.title}>АВТОРИЗАЦИЯ</h2>
+          <h2 className={styles.title}>АВТОРИЗАЦІЯ</h2>
           <div className={styles.wrapper}>
             {/* Email */}
             <label className={styles.label} htmlFor='email'></label>
             <input
               className={classNames(styles.input, styles.email)}
               name='email'
-              placeholder='Почта'
+              placeholder='Пошта'
               type='email'
               value={formik.values.email}
               onChange={formik.handleChange}
@@ -100,10 +98,10 @@ const Authorization = ({ active, setActive }) => {
             {formik.errors.password && formik.touched.password ? (
               <div className={styles.error}>{formik.errors.password}</div>
             ) : null}
-            {/* Buttons */}
+            {/* Button */}
             <div className={styles.button}>
               <button className={styles.buttonSubmit} type='submit'>
-                <span>ВХОД</span>
+                <span>ВХІД</span>
               </button>
             </div>
           </div>

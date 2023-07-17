@@ -22,20 +22,20 @@ const Registration = ({ active, setActive }) => {
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
-        .min(2, 'Минимум 2 символа')
-        .required('Обязательное поле!'),
+        .min(2, 'Мінімум 2 символи')
+        .required('Обов`язкове поле!'),
       lastName: Yup.string()
-        .min(2, 'Минимум 2 символа')
-        .required('Обязательное поле!'),
+        .min(2, 'Мінімум 2 символи')
+        .required('Обов`язкове поле!'),
       userName: Yup.string()
-        .min(4, 'Минимум 4 символа')
-        .required('Обязательное поле!'),
+        .min(4, 'Мінімум 4 символи')
+        .required('Обов`язкове поле!'),
       email: Yup.string()
-        .email('Неправильный email адрес')
-        .required('Обязательное поле!'),
+        .email('Неправильний email')
+        .required('Обов`язкове поле!'),
       password: Yup.string()
-        .min(6, 'Минимум 6 символов')
-        .required('Обязательное поле!'),
+        .min(6, 'Мінімум 6 символів')
+        .required('Обов`язкове поле!'),
     }),
     onSubmit: (values, { setSubmitting, resetForm }) => {
       console.log(JSON.stringify(values, null, 2));
@@ -52,12 +52,10 @@ const Registration = ({ active, setActive }) => {
         headers: { Registration: 'form registration' },
       });
       console.log(response.data);
-      // Показать сообщение про успешную регистрацию
-      alert('Успешная регистрация!');
+      alert('Успішная реєстрація!');
     } catch (error) {
       console.error('Error:', error);
-      // Показать сообщение про неудачную регистрацию
-      alert('Неудачная регистрация!');
+      alert('Невдала реєстрація!');
     }
   };
 
@@ -74,13 +72,13 @@ const Registration = ({ active, setActive }) => {
           method='post'
           onSubmit={formik.handleSubmit}
         >
-          <h2 className={styles.title}>РЕГИСТРАЦИЯ</h2>
+          <h2 className={styles.title}>РЕЄСТРАЦІЯ</h2>
           <div className={styles.wrapper}>
             <label className={styles.label} htmlFor='firstName'></label>
             <input
               className={classNames(styles.input, styles.firstName)}
               name='firstName'
-              placeholder='Имя'
+              placeholder='Ім`я'
               type='text'
               value={formik.values.firstName}
               onChange={formik.handleChange}
@@ -93,7 +91,7 @@ const Registration = ({ active, setActive }) => {
             <input
               className={classNames(styles.input, styles.lastName)}
               name='lastName'
-              placeholder='Фамилия'
+              placeholder='Прізвище'
               type='text'
               value={formik.values.lastName}
               onChange={formik.handleChange}
@@ -106,7 +104,7 @@ const Registration = ({ active, setActive }) => {
             <input
               className={classNames(styles.input, styles.userName)}
               name='userName'
-              placeholder='Имя пользователя'
+              placeholder='Ім`я користувача'
               type='text'
               value={formik.values.userName}
               onChange={formik.handleChange}
@@ -119,7 +117,7 @@ const Registration = ({ active, setActive }) => {
             <input
               className={classNames(styles.input, styles.email)}
               name='email'
-              placeholder='Электронная почта'
+              placeholder='Пошта'
               type='email'
               value={formik.values.email}
               onChange={formik.handleChange}
@@ -143,7 +141,7 @@ const Registration = ({ active, setActive }) => {
             ) : null}
             <div className={styles.button}>
               <button className={styles.buttonSubmit} type='submit'>
-                <span>РЕГИСТРАЦИЯ</span>
+                <span>РЕЄСТРАЦІЯ</span>
               </button>
             </div>
           </div>
