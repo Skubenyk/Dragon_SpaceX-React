@@ -111,140 +111,143 @@ Object {
       <div
         class="modal"
       >
-        <form
-          class="form"
-          method="post"
-        >
-          <h2
-            class="title"
+        <div>
+          <form
+            class="form"
+            method="post"
           >
-            АВТОРИЗАЦІЯ
-          </h2>
-          <div
-            class="wrapper"
-          >
-            <label
-              class="label"
-              for="email"
-            />
-            <input
-              class="input email"
-              name="email"
-              placeholder="Пошта"
-              type="email"
-              value=""
-            />
-            <label
-              class="label"
-              for="password"
-            />
-            <input
-              class="input password"
-              name="password"
-              placeholder="Пароль"
-              type="password"
-              value=""
-            />
-            <div
-              class="button"
+            <h2
+              class="title"
             >
-              <button
-                class="buttonSubmit"
-                type="submit"
+              АВТОРИЗАЦІЯ
+            </h2>
+            <div
+              class="wrapper"
+            >
+              <label
+                class="label"
+                for="email"
+              />
+              <input
+                class="input email"
+                name="email"
+                placeholder="Пошта"
+                type="email"
+                value=""
+              />
+              <label
+                class="label"
+                for="password"
+              />
+              <input
+                class="input password"
+                name="password"
+                placeholder="Пароль"
+                type="password"
+                value=""
+              />
+              <div
+                class="button"
               >
-                <span>
-                  ВХІД
-                </span>
-              </button>
+                <button
+                  class="buttonSubmit"
+                  type="submit"
+                >
+                  <span>
+                    ВХІД
+                  </span>
+                </button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
       <div
         class="modal"
       >
-        <form
-          class="form"
-          method="post"
-        >
-          <h2
-            class="title"
+        <div>
+          <form
+            class="form"
+            method="post"
           >
-            РЕЄСТРАЦІЯ
-          </h2>
-          <div
-            class="wrapper"
-          >
-            <label
-              class="label"
-              for="firstName"
-            />
-            <input
-              class="input firstName"
-              data-testid="firstName"
-              name="firstName"
-              placeholder="Ім'я"
-              type="text"
-              value=""
-            />
-            <label
-              class="label"
-              for="lastName"
-            />
-            <input
-              class="input lastName"
-              name="lastName"
-              placeholder="Прізвище"
-              type="text"
-              value=""
-            />
-            <label
-              class="label"
-              for="userName"
-            />
-            <input
-              class="input userName"
-              name="userName"
-              placeholder="Ім'я користувача"
-              type="text"
-              value=""
-            />
-            <label
-              class="label"
-              for="email"
-            />
-            <input
-              class="input email"
-              name="email"
-              placeholder="Пошта"
-              type="email"
-              value=""
-            />
-            <label
-              class="label"
-              for="password"
-            />
-            <input
-              class="input password"
-              name="password"
-              placeholder="Пароль"
-              type="password"
-              value=""
-            />
-            <div
-              class="button"
+            <h2
+              class="title"
             >
-              <button
-                class="buttonSubmit"
-                type="submit"
+              РЕЄСТРАЦІЯ
+            </h2>
+            <div
+              class="wrapper"
+            >
+              <label
+                class="label"
+                for="firstName"
+              />
+              <input
+                class="input firstName"
+                name="firstName"
+                placeholder="Ім\`я"
+                type="text"
+                value=""
+              />
+              <label
+                class="label"
+                for="lastName"
+              />
+              <input
+                class="input lastName"
+                name="lastName"
+                placeholder="Прізвище"
+                type="text"
+                value=""
+              />
+              <label
+                class="label"
+                for="userName"
+              />
+              <input
+                class="input userName"
+                name="userName"
+                placeholder="Ім\`я користувача"
+                type="text"
+                value=""
+              />
+              <label
+                class="label"
+                for="email"
+              />
+              <input
+                class="input email"
+                name="email"
+                placeholder="Пошта"
+                type="email"
+                value=""
+              />
+              <label
+                class="label"
+                for="password"
+              />
+              <input
+                class="input password"
+                name="password"
+                placeholder="Пароль"
+                type="password"
+                value=""
+              />
+              <div
+                class="button"
               >
-                <span>
-                  РЕЄСТРАЦІЯ
-                </span>
-              </button>
+                <button
+                  class="buttonSubmit"
+                  type="submit"
+                >
+                  <span>
+                    РЕЄСТРАЦІЯ
+                  </span>
+                </button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
     <div>
@@ -354,140 +357,143 @@ Object {
       <div
         class="modal"
       >
-        <form
-          class="form"
-          method="post"
-        >
-          <h2
-            class="title"
+        <div>
+          <form
+            class="form"
+            method="post"
           >
-            АВТОРИЗАЦІЯ
-          </h2>
-          <div
-            class="wrapper"
-          >
-            <label
-              class="label"
-              for="email"
-            />
-            <input
-              class="input email"
-              name="email"
-              placeholder="Пошта"
-              type="email"
-              value=""
-            />
-            <label
-              class="label"
-              for="password"
-            />
-            <input
-              class="input password"
-              name="password"
-              placeholder="Пароль"
-              type="password"
-              value=""
-            />
-            <div
-              class="button"
+            <h2
+              class="title"
             >
-              <button
-                class="buttonSubmit"
-                type="submit"
+              АВТОРИЗАЦІЯ
+            </h2>
+            <div
+              class="wrapper"
+            >
+              <label
+                class="label"
+                for="email"
+              />
+              <input
+                class="input email"
+                name="email"
+                placeholder="Пошта"
+                type="email"
+                value=""
+              />
+              <label
+                class="label"
+                for="password"
+              />
+              <input
+                class="input password"
+                name="password"
+                placeholder="Пароль"
+                type="password"
+                value=""
+              />
+              <div
+                class="button"
               >
-                <span>
-                  ВХІД
-                </span>
-              </button>
+                <button
+                  class="buttonSubmit"
+                  type="submit"
+                >
+                  <span>
+                    ВХІД
+                  </span>
+                </button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
       <div
         class="modal"
       >
-        <form
-          class="form"
-          method="post"
-        >
-          <h2
-            class="title"
+        <div>
+          <form
+            class="form"
+            method="post"
           >
-            РЕЄСТРАЦІЯ
-          </h2>
-          <div
-            class="wrapper"
-          >
-            <label
-              class="label"
-              for="firstName"
-            />
-            <input
-              class="input firstName"
-              data-testid="firstName"
-              name="firstName"
-              placeholder="Ім'я"
-              type="text"
-              value=""
-            />
-            <label
-              class="label"
-              for="lastName"
-            />
-            <input
-              class="input lastName"
-              name="lastName"
-              placeholder="Прізвище"
-              type="text"
-              value=""
-            />
-            <label
-              class="label"
-              for="userName"
-            />
-            <input
-              class="input userName"
-              name="userName"
-              placeholder="Ім'я користувача"
-              type="text"
-              value=""
-            />
-            <label
-              class="label"
-              for="email"
-            />
-            <input
-              class="input email"
-              name="email"
-              placeholder="Пошта"
-              type="email"
-              value=""
-            />
-            <label
-              class="label"
-              for="password"
-            />
-            <input
-              class="input password"
-              name="password"
-              placeholder="Пароль"
-              type="password"
-              value=""
-            />
-            <div
-              class="button"
+            <h2
+              class="title"
             >
-              <button
-                class="buttonSubmit"
-                type="submit"
+              РЕЄСТРАЦІЯ
+            </h2>
+            <div
+              class="wrapper"
+            >
+              <label
+                class="label"
+                for="firstName"
+              />
+              <input
+                class="input firstName"
+                name="firstName"
+                placeholder="Ім\`я"
+                type="text"
+                value=""
+              />
+              <label
+                class="label"
+                for="lastName"
+              />
+              <input
+                class="input lastName"
+                name="lastName"
+                placeholder="Прізвище"
+                type="text"
+                value=""
+              />
+              <label
+                class="label"
+                for="userName"
+              />
+              <input
+                class="input userName"
+                name="userName"
+                placeholder="Ім\`я користувача"
+                type="text"
+                value=""
+              />
+              <label
+                class="label"
+                for="email"
+              />
+              <input
+                class="input email"
+                name="email"
+                placeholder="Пошта"
+                type="email"
+                value=""
+              />
+              <label
+                class="label"
+                for="password"
+              />
+              <input
+                class="input password"
+                name="password"
+                placeholder="Пароль"
+                type="password"
+                value=""
+              />
+              <div
+                class="button"
               >
-                <span>
-                  РЕЄСТРАЦІЯ
-                </span>
-              </button>
+                <button
+                  class="buttonSubmit"
+                  type="submit"
+                >
+                  <span>
+                    РЕЄСТРАЦІЯ
+                  </span>
+                </button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </body>,
@@ -598,140 +604,143 @@ Object {
     <div
       class="modal"
     >
-      <form
-        class="form"
-        method="post"
-      >
-        <h2
-          class="title"
+      <div>
+        <form
+          class="form"
+          method="post"
         >
-          АВТОРИЗАЦІЯ
-        </h2>
-        <div
-          class="wrapper"
-        >
-          <label
-            class="label"
-            for="email"
-          />
-          <input
-            class="input email"
-            name="email"
-            placeholder="Пошта"
-            type="email"
-            value=""
-          />
-          <label
-            class="label"
-            for="password"
-          />
-          <input
-            class="input password"
-            name="password"
-            placeholder="Пароль"
-            type="password"
-            value=""
-          />
-          <div
-            class="button"
+          <h2
+            class="title"
           >
-            <button
-              class="buttonSubmit"
-              type="submit"
+            АВТОРИЗАЦІЯ
+          </h2>
+          <div
+            class="wrapper"
+          >
+            <label
+              class="label"
+              for="email"
+            />
+            <input
+              class="input email"
+              name="email"
+              placeholder="Пошта"
+              type="email"
+              value=""
+            />
+            <label
+              class="label"
+              for="password"
+            />
+            <input
+              class="input password"
+              name="password"
+              placeholder="Пароль"
+              type="password"
+              value=""
+            />
+            <div
+              class="button"
             >
-              <span>
-                ВХІД
-              </span>
-            </button>
+              <button
+                class="buttonSubmit"
+                type="submit"
+              >
+                <span>
+                  ВХІД
+                </span>
+              </button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
     <div
       class="modal"
     >
-      <form
-        class="form"
-        method="post"
-      >
-        <h2
-          class="title"
+      <div>
+        <form
+          class="form"
+          method="post"
         >
-          РЕЄСТРАЦІЯ
-        </h2>
-        <div
-          class="wrapper"
-        >
-          <label
-            class="label"
-            for="firstName"
-          />
-          <input
-            class="input firstName"
-            data-testid="firstName"
-            name="firstName"
-            placeholder="Ім'я"
-            type="text"
-            value=""
-          />
-          <label
-            class="label"
-            for="lastName"
-          />
-          <input
-            class="input lastName"
-            name="lastName"
-            placeholder="Прізвище"
-            type="text"
-            value=""
-          />
-          <label
-            class="label"
-            for="userName"
-          />
-          <input
-            class="input userName"
-            name="userName"
-            placeholder="Ім'я користувача"
-            type="text"
-            value=""
-          />
-          <label
-            class="label"
-            for="email"
-          />
-          <input
-            class="input email"
-            name="email"
-            placeholder="Пошта"
-            type="email"
-            value=""
-          />
-          <label
-            class="label"
-            for="password"
-          />
-          <input
-            class="input password"
-            name="password"
-            placeholder="Пароль"
-            type="password"
-            value=""
-          />
-          <div
-            class="button"
+          <h2
+            class="title"
           >
-            <button
-              class="buttonSubmit"
-              type="submit"
+            РЕЄСТРАЦІЯ
+          </h2>
+          <div
+            class="wrapper"
+          >
+            <label
+              class="label"
+              for="firstName"
+            />
+            <input
+              class="input firstName"
+              name="firstName"
+              placeholder="Ім\`я"
+              type="text"
+              value=""
+            />
+            <label
+              class="label"
+              for="lastName"
+            />
+            <input
+              class="input lastName"
+              name="lastName"
+              placeholder="Прізвище"
+              type="text"
+              value=""
+            />
+            <label
+              class="label"
+              for="userName"
+            />
+            <input
+              class="input userName"
+              name="userName"
+              placeholder="Ім\`я користувача"
+              type="text"
+              value=""
+            />
+            <label
+              class="label"
+              for="email"
+            />
+            <input
+              class="input email"
+              name="email"
+              placeholder="Пошта"
+              type="email"
+              value=""
+            />
+            <label
+              class="label"
+              for="password"
+            />
+            <input
+              class="input password"
+              name="password"
+              placeholder="Пароль"
+              type="password"
+              value=""
+            />
+            <div
+              class="button"
             >
-              <span>
-                РЕЄСТРАЦІЯ
-              </span>
-            </button>
+              <button
+                class="buttonSubmit"
+                type="submit"
+              >
+                <span>
+                  РЕЄСТРАЦІЯ
+                </span>
+              </button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>,
   "debug": [Function],

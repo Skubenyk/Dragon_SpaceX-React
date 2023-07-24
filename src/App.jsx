@@ -1,7 +1,7 @@
 //!App
 
 //*Import base
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import React, { Suspense } from 'react';
 import styles from './app.module.scss';
@@ -126,6 +126,7 @@ const App = () => {
               ))[1]
             }
           />
+          <Route path='*' element={<Navigate to='/' />} />
         </Routes>
       </Suspense>
       <Footer />
