@@ -114,7 +114,7 @@ If all these checks are successful, the application will be automatically extend
 <h3>Dev environment</h3>
 <ul><h5>Software versions:</h5>
   <li>React.js - 18.2.0</li>
-  <li>Node.js - v16.15.0</li>
+  <li>Node.js - v20.0</li>
   <li>Formik - 2.2.9</li>
   <li>Axios - 0.27.2</li>
   <li>Yup - 0.32.11</li>
