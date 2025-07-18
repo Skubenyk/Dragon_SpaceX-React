@@ -47,6 +47,9 @@
       "last 1 safari version"
     ]
   },
+   "engines": {
+    "node": "22.x"
+  },
   "devDependencies": {
     "sass": "^1.55.0",
     "webpack": "^5.74.0",
